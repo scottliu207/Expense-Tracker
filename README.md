@@ -8,7 +8,7 @@ NODE_ENV=production
 
 PORT=5000
 
-MONGO_URI=YOUR_DATABASE_URI
+MONGO_URI=your_database_uri
 
 
 ## Run script
