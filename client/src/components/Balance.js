@@ -1,12 +1,14 @@
 import React, { useContext } from "react"
-import { GlobalContext, GlobalProvider } from "./context/GlobalContext"
+import { GlobalContext } from "./context/GlobalState"
 
 const Balance = () => {
   const { transactions } = useContext(GlobalContext)
 
-  const amounts = transactions.map((transaction) => transaction.amount)
+  const amounts = transactions.map((transaction) => {
+    return transaction.amount
+  })
 
-  const totalAmount = amounts.reduce((acc, amount) => acc + amount)
+  const totalAmount = amounts.reduce((acc, amount) => acc + amount, 0)
 
   return (
     <div className="balance-container">
