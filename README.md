@@ -16,6 +16,8 @@ MONGO_URI=your_database_uri
 ### #run backend only
 npm start
 
+npm run server(nodemon)
+
 ### #run frontend only
 npm run client
 
