@@ -1,6 +1,18 @@
-# Expense Tracker
+## Expense Tracker
 ### MERN Stack Exercise 
-### run script in the root folder
+
+## Usage
+### create .env file in the root folder and paste up these
+
+NODE_ENV=production
+
+PORT=5000
+
+MONGO_URI=YOUR_DATABASE_URI
+
+
+## Run script
+### in the root folder
 ### #run backend only
 npm start
 
