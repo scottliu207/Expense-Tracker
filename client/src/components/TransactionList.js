@@ -10,7 +10,6 @@ const TransactionList = () => {
       <h3>History</h3>
       <ul className="list">
         {transactions.map((transaction) => {
-          console.log(transaction)
           return <Transaction transaction={transaction} key={transaction.id} />
         })}
       </ul>
